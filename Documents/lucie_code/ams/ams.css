@@ -1,0 +1,370 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    /* max-width: 100%; */
+    /* left: 0;
+    right: 0; */
+}
+
+header > * {
+    width: calc(100%/3);
+}
+
+/* hamburger menu*/
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    width: 126px;
+    position: absolute;
+    top: 0px;
+  }
+
+.hidden {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+.topnav .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav .icon:hover {
+    cursor: pointer;
+  }
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+  }
+
+.active {
+    background-color: black;
+    color: white;
+  }
+
+.active:hover {
+    cursor: default;
+}
+
+#my-links a:hover {
+    font-weight: 900;
+}
+
+/* end hamburger menu*/
+.header-right {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.green-btn  {
+    background-color: #18af75;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 900;
+    min-width: 353px;
+    text-align: center;
+}
+
+.green-btn:hover {
+    background-color: #009864;
+    cursor: pointer;
+}
+
+.red-box {
+    display: flex;
+    background-color: red;
+    width: 180px;
+    height: 51px;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    font-size: 26px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 52px;
+    margin: 0 45px;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    height: 549px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.iamsterdam.com/media/spring/kloveniersburgwal-in-spring-adrien-olichon.jpg);
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    fill: white;
+    z-index: 2;
+    height: 60px;
+    width: 45px;
+    transform: rotate(-90deg);
+}
+
+
+
+.big-heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    height: 549px;
+    font-size: 54px;
+    font-weight: 900;
+    padding-left: 45px;
+    margin-left: 45px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 16px rgb(0 0 0 / 75%);
+    font-size: 48px;
+}
+
+.article-widgets {
+    display: grid;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.article-widgets.small {
+    grid-template-columns: auto auto;
+}
+
+.article-widgets.big {
+    grid-template-columns: auto auto;
+}
+
+.article-widgets img {
+    width: 100%;
+}
+
+.widget-box {
+    position: relative;
+}
+
+.widget-text {
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    border-left: 4px solid red;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.article-descr {
+    width: 456px;
+    line-height: 1.5;
+}
+
+.article-descr.small {
+    width: 297px;
+}
+
+.platform-cards-block {
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.platform-card {
+    flex-direction: column;
+    width: 297px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 15%);
+}
+
+.platform-card img {
+    width: 297px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.card-info {
+    padding: 32px;
+}
+
+.card-info div {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.readmore {
+    border-bottom: 2px solid red;
+    display: inline-flex;
+    padding-top: 32px;
+
+}
+
+.readmore:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.lower-search-bar {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+input {
+    border: 1px solid black;
+    width: 424px;
+    height: 36px;
+    padding: 0 15px;
+
+}
+
+.lower-search-bar svg {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    fill: red;
+    width: 20px;
+    height: auto;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding-top: 40px;
+    line-height: 2;
+    padding: 0 98px;
+}
+
+footer .underline {
+    text-decoration: underline;
+}
+
+footer .underline:hover {
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+
+
+.footer-links {
+    display: flex;
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+.footer-links a {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-footer-title {
+    padding-bottom: 10px;
+}
+
+.copyright-links {
+    border-top: 1px solid rgba(77,77,79,.2);
+}
+
+.copyright-links li {
+    padding-top: 30px;
+    display: inline;
+    
+}
+
+.copyright-links li:hover {
+    text-decoration: none;
+}
+
+.copyright-links li:not(.nav-footer-title) {
+    color: red;
+}
+
+.nav-footer-title, .social-media-links a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.social-media-links li {
+    margin-bottom: 17px;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1020px;
+    }
+    .article-widgets.small {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* --------------------------- */
+
+
+
+
+
